@@ -1,4 +1,4 @@
-# Rainfall Simulation
+![Main view](/images/title.png)
 
 Course project for ECE 565: Performance Optimization & Parallelism.
 
