@@ -1,0 +1,7 @@
+Rainfall simulation took 174 time steps to complete.
+Runtime = 5.681e-05 seconds
+
+40.5 13.5 13.5 13.75 
+13.5 14 20.5 86.75 
+13.5 13.5 13.5 54 
+76 18.5 13.5 13.5 
