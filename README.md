@@ -9,3 +9,9 @@ the 2D landscape in each time step as raindrops fall onto the points, trickle to
 points, and get absorbed into the ground.
 
 Two versions: sequential and parallel.
+
+# Output
+![Main view](/images/output.png)
+
+# Speedups on multithreads
+![Main view](/images/measure.png)
