@@ -13,7 +13,7 @@ Two versions: sequential and parallel.
 # Output
 ![Main view](/images/output.png)
 
-# Speedups on multithreads
+# Speedups on multi-threads
 ![Main view](/images/measure.png)
 
 # Distribution of work
