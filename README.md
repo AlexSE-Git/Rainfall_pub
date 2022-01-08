@@ -15,3 +15,8 @@ Two versions: sequential and parallel.
 
 # Speedups on multithreads
 ![Main view](/images/measure.png)
+
+# Distribution of work
+My part: 
+1. Implemented first traversal (sequential)
+2. Parallized second traversal
