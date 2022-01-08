@@ -115,3 +115,7 @@ bool Landscape::checkRemain() {
     }
     return false;
 }
+
+double Landscape::checkRemain(int x, int y){
+    return this->rainMap.getData(x,y);
+}

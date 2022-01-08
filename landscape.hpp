@@ -22,6 +22,7 @@ class Landscape {
         std::vector<std::vector<double>> printAbsorbed();
         void printRain(); 
         bool checkRemain();
+        double checkRemain(int x, int y);
 
     private:
         Datamap rainMap;
