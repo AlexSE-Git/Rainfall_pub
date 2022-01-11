@@ -2,12 +2,12 @@
 
 #include <vector>
 
-class Datamap {
+class DataMat {
     public:
         // Constructor
-        Datamap(int n);
+        DataMat(int n);
 
-        double getData(int x, int y);
+        double getData(int x, int y) const;
         void setData(int x, int y, double val); 
 
     private:

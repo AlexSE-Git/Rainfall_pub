@@ -1,24 +1,24 @@
-#include "vectormap.hpp"
+#include "VectorMat.hpp"
 
-VectorMap::VectorMap(int N) {
+VectorMat::VectorMat(int N) {
     X.assign(N, vector<vector<int>>(N, vector<int>(0)));
     Y.assign(N, vector<vector<int>>(N, vector<int>(0)));
     trickleMatrix.assign(N, vector<bool>(N, false));
 }
 
-vector<int> VectorMap::getX(int x, int y){
+vector<int> VectorMat::getX(int x, int y){
     return this->X[x][y];
 }
 
-vector<int> VectorMap::getY(int x, int y){
+vector<int> VectorMat::getY(int x, int y){
     return this->Y[x][y];
 }
 
-bool VectorMap::ifTrickle(int x, int y){
+bool VectorMat::ifTrickle(int x, int y){
     return this->trickleMatrix[x][y];
 }
 
-void VectorMap::setData(const vector<vector<int>> & landArray, int & N){
+void VectorMat::setData(const vector<vector<int>> & landArray, int & N){
     for (int i=0; i<N; i++){
         for (int j=0; j<N; j++){
             int minHeight = landArray[i][j]-1;

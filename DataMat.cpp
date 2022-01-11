@@ -1,12 +1,12 @@
-#include "datamap.hpp"
+#include "DataMat.hpp"
 #include <iostream>
 
-Datamap::Datamap(int n) {
+DataMat::DataMat(int n) {
     this->dimension = n;
     this->dataMatrix = this->initDM(n);
 }
 
-std::vector<std::vector<double>> Datamap::initDM(int n) {
+std::vector<std::vector<double>> DataMat::initDM(int n) {
     std::vector<std::vector<double>> out;
     out.reserve(n);
     
@@ -22,11 +22,11 @@ std::vector<std::vector<double>> Datamap::initDM(int n) {
     return out;
 }
 
-double Datamap::getData(int x, int y) {
+double DataMat::getData(int x, int y) const{
     return this->dataMatrix[x][y];
 }
 
-void Datamap::setData(int x, int y, double val) {
+void DataMat::setData(int x, int y, double val) {
     this->dataMatrix[x][y] = val;
 }
 
