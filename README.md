@@ -19,7 +19,7 @@ Two versions: sequential and parallel.
 # Distribution of work
 My part: 
 1. Implemented first traversal (sequential)
-2. Parallized second traversal
+2. Parallelized second traversal
 
 # Demo
 Environment: Linux
