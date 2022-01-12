@@ -10,7 +10,7 @@ points, and get absorbed into the ground.
 
 Two versions: sequential and parallel.
 
-# Output
+# Output file
 ![Main view](/images/output.png)
 
 # Speedups on multi-threads
@@ -20,3 +20,16 @@ Two versions: sequential and parallel.
 My part: 
 1. Implemented first traversal (sequential)
 2. Parallized second traversal
+
+# Demo
+Environment: Linux
+
+Dependency: C++ build environment, Python 3.x
+
+To perform the demo, simply run the demo shell script:
+```
+$ sh demo.sh
+```
+
+## Sample terminal output (partially cropped)
+![sample out](/images/sample_out.png)

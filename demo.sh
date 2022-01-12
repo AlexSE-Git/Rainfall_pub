@@ -1,5 +1,8 @@
 #! /bin/bash
 
+make clean
+make
+
 echo "Using sequential simulator"
 ./rainfall_seq 1 30 0.25 128 artifacts/sample_128x128.in
 python3 ./check.py 128 artifacts/sample_128x128.out output.txt
