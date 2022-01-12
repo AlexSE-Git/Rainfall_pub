@@ -49,7 +49,7 @@ double simulate(Landscape * myLandscape, char *argv[]){
     initMutex(N);
     std::thread pool[P];
     struct timespec start_time, end_time;
-    cout << "Start simulating..."<<endl;
+    std::cout << "Start simulating..."<<std::endl;
     clock_gettime(CLOCK_MONOTONIC, &start_time);
     while (true) {
         if (N<P){ // handle the situation where N is smaller than P
