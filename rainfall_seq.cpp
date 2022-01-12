@@ -71,7 +71,7 @@ int main(int argc, char *argv[]){
     // read file and init myLandscape
     vector<vector<int>> landArray;
     readFile(elevation_file, landArray, N); 
-    Landscape myLandscape = Landscape(A, N, landArray);
+    Landscape myLandscape(A, N, landArray);
 
     // simulate
     float elapsed_s = simulate(myLandscape);

@@ -8,4 +8,5 @@ rainfall_seq: rainfall_seq.cpp landscape.cpp VectorMat.cpp DataMat.cpp
 	g++ -O3 -std=c++11 -Wall -o $@ $^
 
 rainfall_pt: rainfall_pt.cpp landscape.cpp VectorMat.cpp DataMat.cpp
-	g++ -O3 -std=c++14 -Wall -pthread -o $@ $^
+	g++ -g -std=c++17 -Wall -pthread -o $@ $^
+# g++ -O3 -std=c++17 -Wall -pthread -o $@ $^
