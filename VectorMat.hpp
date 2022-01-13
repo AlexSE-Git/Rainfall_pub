@@ -3,6 +3,8 @@
 #include <vector>
 #include <map>
 
+using std::vector;
+
 class VectorMat {
     public:
         
