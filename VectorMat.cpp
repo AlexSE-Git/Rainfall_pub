@@ -1,5 +1,7 @@
 #include "VectorMat.hpp"
 
+using std::vector;
+
 VectorMat::VectorMat(int N) {
     X.assign(N, vector<vector<int>>(N, vector<int>(0)));
     Y.assign(N, vector<vector<int>>(N, vector<int>(0)));

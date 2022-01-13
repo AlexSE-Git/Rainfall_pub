@@ -5,6 +5,8 @@
 #include "DataMat.hpp"
 #include "VectorMat.hpp"
 
+using std::vector;
+
 Landscape::Landscape(double abr, int n, const vector<vector<int>>& landArray) : rainMat(n), nextTrickleMat(n), absorbedMat(n), absorption_rate(abr), dimension(n), directions(n) {
     // Store elevation info in our data structure: vectormat
     this->directions.setData(landArray, n);
