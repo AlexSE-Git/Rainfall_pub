@@ -9,13 +9,12 @@
 #include <vector>
 #include <algorithm>
 
-using std::vector;
 
 class Landscape {
     public:
         // Constructor
         // Parameters: absorb rate, dimension, land array
-        Landscape(double abr, int n, const vector<vector<int>> & landArray); 
+        Landscape(double abr, int n, const std::vector<std::vector<int>> & landArray); 
 
         void receive_new(int x, int y);
         void absorb(int x, int y);

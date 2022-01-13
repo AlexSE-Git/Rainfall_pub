@@ -13,13 +13,11 @@
 #include <utility>
 #include "landscape.hpp"
 
-using std::vector;
-
-void readFile(std::string& file, vector<vector<int>>& landArray, int N) {
+void readFile(std::string& file, std::vector<std::vector<int>>& landArray, int N) {
     std::ifstream ifs;
     ifs.open(file, std::ifstream::in);
 
-    landArray.assign(N, vector<int>(N, 0));
+    landArray.assign(N, std::vector<int>(N, 0));
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             ifs >> landArray[i][j];
@@ -29,7 +27,7 @@ void readFile(std::string& file, vector<vector<int>>& landArray, int N) {
     ifs.close();
 }
 
-void writeFile(int STEP, double elapsed_s, vector<vector<double>> &abs, int N){
+void writeFile(int STEP, double elapsed_s, std::vector<std::vector<double>> &abs, int N){
     std::ofstream myfile;
     myfile.open ("output.txt");
     myfile << "Rainfall simulation took "<< STEP <<" time steps to complete.\n";

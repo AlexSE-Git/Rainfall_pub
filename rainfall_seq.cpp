@@ -58,6 +58,8 @@ float simulate(Landscape& myLandscape){
 }
 
 int main(int argc, char *argv[]){
+    using std::vector;
+    
     M = atoi(argv[2]);
 
     std::stringstream ss(argv[3]);
